@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <h1>Users</h1>
+    <ul>
+        {{ for(let x of users){ }}
+            <li><a href="/{{x._id}}">{{x.username }}</a></li>
+        {{ } }}
+    </ul>
+</body>
+</html>
